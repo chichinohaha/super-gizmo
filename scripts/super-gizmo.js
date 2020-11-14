@@ -147,7 +147,7 @@ class superGizmo extends Editor.Gizmo {
         }
         circle.stroke(this.getFittedStrokeData({ width: this.defaultTouchStrokeWidth }))
             .fill({ color: this.defaultTouchFillColor })
-            .stroke({ color: this.defaultTouchStrokeColor, width: this.defaultStrokeWidth })
+            .stroke({ color: this.defaultTouchStrokeColor})
             .radius(this.getFittedNumber(this.defaultTouchCircleRadius));
         circle.attr('drawIndex', drawIndex);
         circle.attr('groupIndex', groupIndex);
