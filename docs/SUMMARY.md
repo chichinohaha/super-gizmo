@@ -4,7 +4,7 @@
 * [什么是SuperGizmo](What is SuperGizmo.md)
 * [API](API.md)
 
-- 基于super-gizmo的插件
+- [基于super-gizmo的插件](plugin.md)
 
   - [多边形音效按钮](https://store.cocos.com/#/resources/detail/2519)
 
