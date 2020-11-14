@@ -1,0 +1,1551 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>API · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="What is SuperGizmo.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="What is SuperGizmo.html">
+            
+                <a href="What is SuperGizmo.html">
+            
+                    
+                    什么是SuperGizmo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="API.html">
+            
+                <a href="API.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <a target="_blank" href="https://store.cocos.com/#/resources/detail/2519">
+            
+                    
+                    多边形音效按钮
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <a target="_blank" href="https://store.cocos.com/#/resources/detail/2519">
+            
+                    
+                    多边形音效按钮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <a target="_blank" href="https://store.cocos.com/#/resources/detail/2537">
+            
+                    
+                    Tweener缓动插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="supergizmo-&#x7C7B;&#x578B;"><code>superGizmo</code> &#x7C7B;&#x578B;</h2>
+<p>&#x7EE7;&#x627F;&#x4E8E; <a href="https://docs.cocos.com/creator/manual/zh/extension/api/editor-framework/renderer/gizmo.html" target="_blank">Editor.Gizmo</a></p>
+<p>&#x8D85;&#x7EA7;gizmo</p>
+<h3 id="&#x7D22;&#x5F15;">&#x7D22;&#x5F15;</h3>
+<h5 id="&#x7236;&#x7C7B;&#x7684;&#x5C5E;&#x6027;">&#x7236;&#x7C7B;&#x7684;&#x5C5E;&#x6027;</h5>
+<h3 id="editorgizmoprototypenode">Editor.Gizmo.prototype.node</h3>
+<p>Get node of the gizmo.</p>
+<h3 id="editorgizmoprototypenodes">Editor.Gizmo.prototype.nodes</h3>
+<p>Get current nodes of the gizmo.</p>
+<h3 id="editorgizmoprototypetopnodes">Editor.Gizmo.prototype.topNodes</h3>
+<p>Get current top nodes of the gizmo.</p>
+<h3 id="editorgizmoprototypeselecting">Editor.Gizmo.prototype.selecting</h3>
+<p>Whether the gizmo is selecting.</p>
+<h3 id="editorgizmoprototypeediting">Editor.Gizmo.prototype.editing</h3>
+<p>Whether the gizmo is editing.</p>
+<h3 id="editorgizmoprototypehovering">Editor.Gizmo.prototype.hovering</h3>
+<p>Whether the gizmo is hovering.</p>
+<h5 id="&#x5C5E;&#x6027;&#xFF08;properties&#xFF09;">&#x5C5E;&#x6027;&#xFF08;properties&#xFF09;</h5>
+<ul>
+<li><p><code>circles</code>  <code>Svg.Circle[][]</code></p>
+</li>
+<li><p><code>lines</code>  <code>Svg.Line[][]</code> </p>
+</li>
+<li><p><code>paths</code>  <code>Svg.Path[][]</code></p>
+</li>
+<li><p><code>rects</code>  <code>Svg.Rect[][]</code></p>
+</li>
+<li><p><code>touchCircles</code>  <code>Svg.Circle[][]</code></p>
+</li>
+<li><p><code>touchLines</code>  <code>Svg.Line[][]</code></p>
+</li>
+<li><p><code>touchPaths</code>  <code>Svg.Path[][]</code></p>
+</li>
+<li><p><code>touchRects</code>  <code>Svg.Rect[][]</code></p>
+</li>
+<li><p><code>groups</code>  <code>Svg.G[]</code></p>
+</li>
+<li><p><code>defaultStartColor</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultEndColor</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultCircleFillColor</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultCircleStrokeColor</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultLineStrokeColor</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultPathFillColor</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultPathStrokeColor</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultRectFillColor</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultRectStrokeColor</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultTouchFillColor</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultTouchStrokeColor</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultStrokeWidth</code>  <code>Number</code></p>
+</li>
+<li><p><code>defaultLineDashArray</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultCircleDashArray</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultPathDashArray</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultRectDashArray</code>  <code>String</code></p>
+</li>
+<li><p><code>defaultTouchStrokeWidth</code>  <code>Number</code></p>
+</li>
+<li><p><code>defaultCircleRadius</code>  <code>Number</code></p>
+</li>
+<li><p><code>defaultRectWidth</code>  <code>Number</code></p>
+</li>
+<li><p><code>defaultRectHeight</code>  <code>Number</code></p>
+</li>
+<li><p><code>defaultTouchCircleRadius</code>  <code>Number</code></p>
+</li>
+<li><p><code>defaultTouchRectWidth</code>  <code>Number</code></p>
+</li>
+<li><p><code>defaultTouchRectHeight</code>  <code>Number</code></p>
+</li>
+</ul>
+<h5 id="&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;">&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;</h5>
+<h2 id="methods">Methods</h2>
+<h3 id="editorgizmoprototyperegistermovesvgsvg-args-opts">Editor.Gizmo.prototype.registerMoveSvg(svg, args, opts)</h3>
+<p>Register a moveable svg element. When the svg element is moved, the callback created from <code>onCreateMoveCallbacks</code> will be called.</p>
+<ul>
+<li><p><code>svg</code> Svg Element - The svg element which can move.</p>
+</li>
+<li><p><code>args</code> Object | Array - The args will parse to callback, you can check which svg element is moved with the args.</p>
+</li>
+<li><pre><code>opts
+</code></pre></li>
+</ul>
+<p>  Object - The options you can set.</p>
+<ul>
+<li><code>cursor</code> String - The move mouse cursor.</li>
+<li><code>ignoreWhenHoverOther</code> Boolean - Will ignore the mouse down event on this svg element if hover on other svg element.</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.registerMoveSvg(moveRectSvg, <span class="hljs-string">&apos;move-rect&apos;</span>);
+<span class="hljs-keyword">this</span>.registerMoveSvg(moveAnchorSvg, <span class="hljs-string">&apos;move-anchor-rect&apos;</span>);
+</code></pre>
+<h3 id="editorgizmoprototyperecordchanges">Editor.Gizmo.prototype.recordChanges()</h3>
+<p>Record undo changes, generally gizmo will record changes automatically.</p>
+<h3 id="editorgizmoprototypecommitchanges">Editor.Gizmo.prototype.commitChanges()</h3>
+<p>Commit undo changes, generally gizmo will commit changes automatically</p>
+<h3 id="editorgizmoprototypeadjustvaluetargets-keys-mindifference">Editor.Gizmo.prototype.adjustValue(targets, keys, minDifference)</h3>
+<p>Adjust value to avoid value&apos;s fractional part to be too long.</p>
+<ul>
+<li><code>targets</code> [Object] - The target wich should adjust.</li>
+<li><code>keys</code> String (optional) - If not specified, then will adjust all available properties on target.</li>
+<li><code>minDifference</code> Number(optionnal) - The decimal precision, default is <code>Editor.Gizmo.prototype.defaultMinDifference()</code></li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.adjustValue(<span class="hljs-keyword">this</span>.node, [<span class="hljs-string">&apos;position&apos;</span>]);
+</code></pre>
+<h3 id="editorgizmoprototypeworldtopixelposition">Editor.Gizmo.prototype.worldToPixel(position)</h3>
+<p>Convert cocos2d world position to svg position.</p>
+<h3 id="editorgizmoprototypepixeltoworldposition">Editor.Gizmo.prototype.pixelToWorld(position)</h3>
+<p>Convert svg position to cocos2d world position.</p>
+<h3 id="editorgizmoprototypescenetopixelposition">Editor.Gizmo.prototype.sceneToPixel(position)</h3>
+<p>Convert cocos2d scene position to svg position.</p>
+<h3 id="editorgizmoprototypepixeltosceneposition">Editor.Gizmo.prototype.pixelToScene(position)</h3>
+<p>Convert svg position to cocos2d scene position.</p>
+<h2 id="inherit-methods">Inherit Methods</h2>
+<h3 id="editorgizmoprototypeinit">Editor.Gizmo.prototype.init()</h3>
+<p>Call when init a gizmo, you can reimplement this function to do your self init.</p>
+<p>Default implement:</p>
+<pre><code class="lang-javascript">init () {
+    <span class="hljs-comment">// init logic</span>
+}
+</code></pre>
+<h3 id="editorgizmoprototypelayer">Editor.Gizmo.prototype.layer()</h3>
+<p>There three layer types now: background, scene, foreground, generally we add gizmo to scene layer.</p>
+<p>Default implement:</p>
+<pre><code class="lang-javascript">layer () {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&apos;scene&apos;</span>;
+}
+</code></pre>
+<h3 id="editorgizmoprototypevisible">Editor.Gizmo.prototype.visible()</h3>
+<p>Whether the gizmo is visible, if you want the gizmo always be visible, then return true.</p>
+<p>Default implement:</p>
+<pre><code class="lang-javascript">visible () {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.selecting || <span class="hljs-keyword">this</span>.editing;
+}
+</code></pre>
+<h3 id="editorgizmoprototypedirty">Editor.Gizmo.prototype.dirty()</h3>
+<p>Whether the gizmo is dirty, the gizmo will only update when gizmo is dirty. If you want to update gizmo every frame then <code>return true</code>.</p>
+<p>Default implement:</p>
+<pre><code class="lang-javascript">dirty () {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._viewDirty() || <span class="hljs-keyword">this</span>._nodeDirty() || <span class="hljs-keyword">this</span>._dirty;
+}
+</code></pre>
+<h3 id="editorgizmoprototypeoncreateroot">Editor.Gizmo.prototype.onCreateRoot()</h3>
+<p>This function will call when create the root svg element for a gizmo. You can implement this function to custom your gizmo creation.</p>
+<pre><code class="lang-javascript">onCreateRoot () {
+    <span class="hljs-comment">// your implement</span>
+    <span class="hljs-keyword">var</span> tool = <span class="hljs-keyword">this</span>._root.group();
+}
+</code></pre>
+<h3 id="editorgizmoprototypeoncreatemovecallbacks">Editor.Gizmo.prototype.onCreateMoveCallbacks()</h3>
+<p>This callback return from the function will call when the moveable svg element is moved.</p>
+<p>The callback should include methods with:</p>
+<ul>
+<li>start(x, y, event, ...args) - Called when mouse press on the svg<ul>
+<li><code>x</code> Number - Press x position</li>
+<li><code>y</code> Number - Press y position</li>
+<li><code>event</code> MouseEvent - The mouse event</li>
+<li><code>args</code> - The arguments parsed from <code>registerMoveSvg</code></li>
+</ul>
+</li>
+<li>update(dx, dy, event, ...args) - Called when mouse move on the svg<ul>
+<li><code>dx</code> Number - Horizontal move distance from current mouse position to start mouse position</li>
+<li><code>dy</code> Number - Vertical move distance from current mouse position to start mouse position</li>
+<li><code>event</code> MouseEvent - The mouse event</li>
+<li><code>args</code> - The arguments parsed from <code>registerMoveSvg</code></li>
+</ul>
+</li>
+<li>end(updated, event, ...args) - Called when mouse release on the svg<ul>
+<li><code>updated</code> Boolean - Whether the mouse moved</li>
+<li><code>event</code> MouseEvent - The mouse event</li>
+<li><code>args</code> - The arguments parsed from <code>registerMoveSvg</code></li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-javascript">onCreateMoveCallbacks () {
+    <span class="hljs-keyword">return</span> {
+        start: (x, y, event, ...args) =&gt; {
+
+        },
+        update: (dx, dy, event, ...args) =&gt; {
+
+        },
+        end: (updated, event, ...args) =&gt; {
+
+        }
+    };
+}
+</code></pre>
+<h3 id="editorgizmoprototypedefaultmindifference">Editor.Gizmo.prototype.defaultMinDifference()</h3>
+<p>Used for <code>Editor.Gizmo.prototype.adjustValue</code>.</p>
+<p>The default min difference will be:</p>
+<pre><code class="lang-javascript">defaultMinDifference() {
+    <span class="hljs-keyword">return</span> Editor.Math.numOfDecimalsF(<span class="hljs-number">1.0</span>/<span class="hljs-keyword">this</span>._view.scale);
+}
+</code></pre>
+<h5 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h5>
+<ul>
+<li><a href="#convertToNodePostion">convertToNodePostion</a> &#x5C06;svg&#x5750;&#x6807;&#x7CFB;&#x4E0B;&#x7684;&#x70B9;&#x8F6C;&#x5316;&#x5230;&#x8282;&#x70B9;&#x5750;&#x6807;</li>
+<li><a href="#getBezierPathData">getBezierPathData</a> &#x83B7;&#x53D6;&#x8DEF;&#x5F84;&#x6E32;&#x67D3;&#x8D1D;&#x585E;&#x5C14;&#x6240;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;</li>
+<li><a href="#getClosePathData">getClosePathData</a> &#x83B7;&#x53D6;&#x8DEF;&#x5F84;&#x6E32;&#x67D3;&#x5C01;&#x95ED;&#x591A;&#x8FB9;&#x5F62;&#x6240;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;</li>
+<li><a href="#getFittedNumber">getFittedNumber</a> &#x83B7;&#x53D6;&#x9002;&#x914D;&#x89C6;&#x56FE;&#x7684;&#x6570;&#x5B57;</li>
+<li><a href="#getFittedStrokeData">getFittedStrokeData</a> &#x83B7;&#x53D6;&#x9002;&#x914D;&#x89C6;&#x56FE;&#x7684;StrokeData</li>
+<li><a href="#getFittedPosition">getFittedPosition</a> &#x83B7;&#x53D6;&#x9002;&#x914D;&#x89C6;&#x56FE;&#x7684;&#x70B9;</li>
+<li><a href="#getFittedPositionArray">getFittedPositionArray</a> &#x83B7;&#x53D6;&#x9002;&#x914D;&#x89C6;&#x56FE;&#x7684;&#x70B9;&#x7684;&#x6570;&#x7EC4;</li>
+<li><a href="#getGroup">getGroup</a> &#x83B7;&#x53D6;Svg&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;group</li>
+<li><a href="#getCircle">getCircle</a> &#x83B7;&#x53D6;&#x5706;&#x5F62;</li>
+<li><a href="#getTouchCircle">getTouchCircle</a> &#x83B7;&#x53D6;&#x89E6;&#x63A7;&#x7684;&#x5706;&#x5F62;</li>
+<li><a href="#getLine">getLine</a> &#x83B7;&#x53D6;&#x7EBF;&#x6BB5;</li>
+<li><a href="#getTouchLine">getTouchLine</a> &#x83B7;&#x53D6;&#x89E6;&#x63A7;&#x7684;&#x7EBF;&#x6BB5;</li>
+<li><a href="#getPath">getPath</a> &#x83B7;&#x53D6;&#x8DEF;&#x5F84;</li>
+<li><a href="#getTouchPath">getTouchPath</a> &#x83B7;&#x53D6;&#x89E6;&#x63A7;&#x7684;&#x8DEF;&#x5F84;</li>
+<li><a href="#getRect">getRect</a> &#x83B7;&#x53D6;&#x77E9;&#x5F62;</li>
+<li><a href="#getTouchRect">getTouchRect</a> &#x83B7;&#x53D6;&#x89E6;&#x63A7;&#x7684;&#x77E9;&#x5F62;</li>
+<li><a href="#onLineTouchBegan">abstract onLineTouchBegan</a> &#x7EBF;&#x6BB5;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x56DE;&#x8C03;</li>
+<li><a href="#onLineTouchMoved">abstract onLineTouchMoved</a> &#x7EBF;&#x6BB5;&#x62D6;&#x62FD;&#x56DE;&#x8C03;</li>
+<li><a href="#onLineTouchEnd">abstract onLineTouchEnd</a> &#x7EBF;&#x6BB5;&#x70B9;&#x51FB;&#x7ED3;&#x675F;&#x56DE;&#x8C03;</li>
+<li><a href="#onCircleTouchBegan">abstract onCircleTouchBegan</a> &#x5706;&#x5F62;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x56DE;&#x8C03;</li>
+<li><a href="#onCircleTouchMoved">abstract onCircleTouchMoved</a> &#x5706;&#x5F62;&#x62D6;&#x62FD;&#x56DE;&#x8C03;</li>
+<li><a href="#onCircleTouchEnd">abstract onCircleTouchEnd</a> &#x5706;&#x5F62;&#x70B9;&#x51FB;&#x7ED3;&#x675F;&#x56DE;&#x8C03;</li>
+<li><a href="#onRectTouchBegan">abstract onRectTouchBegan</a> &#x77E9;&#x5F62;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x56DE;&#x8C03;</li>
+<li><a href="#onRectTouchMoved">abstract onRectTouchMoved</a> &#x77E9;&#x5F62;&#x62D6;&#x62FD;&#x56DE;&#x8C03;</li>
+<li><a href="#onRectTouchEnd">abstract onRectTouchEnd</a> &#x77E9;&#x5F62;&#x70B9;&#x51FB;&#x7ED3;&#x675F;&#x56DE;&#x8C03;</li>
+<li><a href="#onPathTouchBegan">abstract onPathTouchBegan</a>&#x8DEF;&#x5F84;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x56DE;&#x8C03;</li>
+<li><a href="#onPathTouchMoved">abstract onPathTouchMoved</a>&#x8DEF;&#x5F84;&#x62D6;&#x62FD;&#x56DE;&#x8C03;</li>
+<li><a href="#onPathTouchEnd">abstract onPathTouchEnd</a>&#x8DEF;&#x5F84;&#x70B9;&#x51FB;&#x7ED3;&#x675F;&#x56DE;&#x8C03;</li>
+<li><a href="#clear">clear</a> &#x6E05;&#x9664;</li>
+<li><a href="#draw">draw</a> &#x7ED8;&#x5236;</li>
+<li><a href="#render">render</a> &#x6E32;&#x67D3;</li>
+<li><a href="https://docs.cocos.com/creator/manual/zh/extension/api/editor-framework/renderer/gizmo.html#editorgizmoprototypeinit" target="_blank">init</a> &#x521D;&#x59CB;&#x5316;</li>
+<li><a href="#resetData">resetData</a> &#x6839;&#x636E;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x91CD;&#x65B0;&#x8BBE;&#x7F6E;&#x6837;&#x5F0F;</li>
+<li><a href="#onCreateMoveCallbacks">onCreateMoveCallbacks</a> &#x521B;&#x5EFA; gizmo &#x64CD;&#x4F5C;&#x56DE;&#x8C03;</li>
+<li><a href="#onCreateRoot">onCreateRoot</a> &#x521B;&#x9020;SVG&#x6839;&#x8282;&#x70B9;&#x7684;&#x56DE;&#x8C03;</li>
+<li><a href="#onUpdate">onUpdate</a> &#x66F4;&#x65B0;&#x7684;&#x56DE;&#x8C03;</li>
+</ul>
+<h3 id="details">Details</h3>
+<h4 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h4>
+<p><span id="convertToNodePostion"><strong>convertToNodePostion</strong></span></p>
+<p>&#x5C06;svg&#x5750;&#x6807;&#x7CFB;&#x4E0B;&#x7684;&#x70B9;&#x8F6C;&#x5316;&#x5230;&#x76EE;&#x6807;&#x8282;&#x70B9;&#x7684;&#x8282;&#x70B9;&#x5750;&#x6807;&#x7CFB;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://docs.cocos.com/creator/api/zh/classes/Vec2.html" target="_blank">cc.Vec2</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L59" target="_blank">super-gizmo.js:59</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><code>point</code> {x?: number;y?: number;}</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x4E0D;&#x63A8;&#x8350;&#x7528;&#x8FD9;&#x4E2A;</span>
+<span class="hljs-comment">//&#x5EFA;&#x8BAE;&#x5F00;&#x53D1;&#x8005;&#x7528;getFittedPosition</span>
+<span class="hljs-keyword">var</span> point = <span class="hljs-keyword">this</span>.convertToNodePostion(cc.v2(<span class="hljs-number">2</span>,<span class="hljs-number">3</span>));
+<span class="hljs-keyword">var</span> point2= <span class="hljs-keyword">this</span>.convertToNodePostion({x:<span class="hljs-number">2</span>,y:<span class="hljs-number">1</span>})
+</code></pre>
+<p><span id="getBezierPathData"><strong>getBezierPathData</strong></span></p>
+<p>&#x83B7;&#x53D6;&#x8DEF;&#x5F84;&#x6E32;&#x67D3;&#x8D1D;&#x585E;&#x5C14;&#x6240;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L66" target="_blank">super-gizmo.js:66</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><code>...pointArray</code> [number, number][]</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw(){
+    <span class="hljs-keyword">let</span> path = <span class="hljs-keyword">this</span>.getPath()
+    <span class="hljs-keyword">let</span> pointArray=<span class="hljs-keyword">this</span>.getFittedPositionArray([<span class="hljs-number">0</span>, <span class="hljs-number">0</span>],[<span class="hljs-number">20</span>, <span class="hljs-number">10</span>], [<span class="hljs-number">200</span>, <span class="hljs-number">-22</span>], [<span class="hljs-number">100</span>, <span class="hljs-number">0</span>])
+    path.plot(<span class="hljs-keyword">this</span>.getBezierPathData(...pointArray))
+}
+</code></pre>
+<p><span id="getClosePathData"><strong>getClosePathData</strong></span></p>
+<p>&#x83B7;&#x53D6;&#x8DEF;&#x5F84;&#x6E32;&#x67D3;&#x5C01;&#x95ED;&#x591A;&#x8FB9;&#x5F62;&#x6240;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L73" target="_blank">super-gizmo.js:73</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><code>...pointArray</code> [number, number][]</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw(){
+    <span class="hljs-keyword">let</span> path = <span class="hljs-keyword">this</span>.getPath()
+    <span class="hljs-keyword">let</span> pointArray=<span class="hljs-keyword">this</span>.getFittedPositionArray([<span class="hljs-number">0</span>, <span class="hljs-number">0</span>], [<span class="hljs-number">20</span>, <span class="hljs-number">10</span>], [<span class="hljs-number">200</span>, <span class="hljs-number">-22</span>], [<span class="hljs-number">100</span>, <span class="hljs-number">0</span>])
+    path.plot(<span class="hljs-keyword">this</span>.getClosePathData(...pointArray))
+}
+</code></pre>
+<p><span id="getFittedNumber"><strong>getFittedNumber</strong></span></p>
+<p>&#x83B7;&#x53D6;&#x9002;&#x914D;&#x89C6;&#x56FE;&#x7684;&#x6570;&#x5B57;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L82" target="_blank">super-gizmo.js:82</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><code>number</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a></li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw(){
+    <span class="hljs-keyword">let</span> rect = <span class="hljs-keyword">this</span>.getRect()
+    rect.width(<span class="hljs-keyword">this</span>.getFittedNumber(<span class="hljs-number">20</span>))
+}
+</code></pre>
+<p><span id="getFittedStrokeData"><strong>getFittedStrokeData</strong></span></p>
+<p>&#x83B7;&#x53D6;&#x9002;&#x914D;&#x89C6;&#x56FE;&#x7684;StrokeData&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L86" target="_blank">super-gizmo.js:86</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>strokeData</code> </p>
+<p>{</p>
+<p>&#x200B;    width?: number;</p>
+<p>&#x200B;    color?: string;</p>
+<p>&#x200B;    opacity?: number;</p>
+<p>&#x200B;    linecap?: string;</p>
+<p>&#x200B;    linejoin?: string;</p>
+<p>&#x200B;    miterlimit?: number;</p>
+<p>&#x200B;    dasharray?: string;</p>
+<p>&#x200B;    dashoffset?: number;</p>
+<p>  }</p>
+</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw(){
+    <span class="hljs-keyword">let</span> rect = <span class="hljs-keyword">this</span>.getRect()
+    rect.stroke(<span class="hljs-keyword">this</span>.getFittedStrokeData({ color: <span class="hljs-keyword">this</span>.defaultRectStrokeColor, width: <span class="hljs-keyword">this</span>.defaultStrokeWidth, dasharray: <span class="hljs-keyword">this</span>.defaultRectDashArray }))
+}
+</code></pre>
+<p><span id="getFittedPosition"><strong>getFittedPosition</strong></span></p>
+<p>&#x83B7;&#x53D6;&#x9002;&#x914D;&#x89C6;&#x56FE;&#x7684;&#x70B9;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td>{ x:number; y:number }</td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L90" target="_blank">super-gizmo.js:90</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><code>pointAlias</code> {x?:number; y?:number} | [number,number]</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw(){
+    <span class="hljs-keyword">let</span> pos = <span class="hljs-keyword">this</span>.getFittedPosition([<span class="hljs-number">20</span>, <span class="hljs-number">20</span>]);
+    <span class="hljs-keyword">this</span>.getCircle()
+        .center(pos.x, pos.y)
+        .radius(<span class="hljs-number">10</span> * <span class="hljs-keyword">this</span>._view.scale);
+}
+</code></pre>
+<p><span id="getFittedPositionArray"><strong>getFittedPositionArray</strong></span></p>
+<p>&#x83B7;&#x53D6;&#x9002;&#x914D;&#x89C6;&#x56FE;&#x7684;&#x70B9;&#x7684;&#x6570;&#x7EC4;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td>[number,number][]</td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L105" target="_blank">super-gizmo.js:105</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><code>...pointAlias</code> {x?:number; y?:number}[] | [number,number][]</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw(){
+    <span class="hljs-keyword">let</span> path = <span class="hljs-keyword">this</span>.getPath()
+    <span class="hljs-keyword">let</span> pointArray=<span class="hljs-keyword">this</span>.getFittedPositionArray([<span class="hljs-number">0</span>, <span class="hljs-number">0</span>],[<span class="hljs-number">20</span>, <span class="hljs-number">10</span>], [<span class="hljs-number">200</span>, <span class="hljs-number">-22</span>], [<span class="hljs-number">100</span>, <span class="hljs-number">0</span>])
+    path.plot(<span class="hljs-keyword">this</span>.getBezierPathData(...pointArray))
+}
+</code></pre>
+<p><span id="getGroup"><strong>getGroup</strong></span></p>
+<p>&#x83B7;&#x53D6;Svg&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7B2C;index&#x4E2A;group&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://svgjs.com/docs/3.0/container-elements/#svg-g" target="_blank">SVG.G</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L105" target="_blank">super-gizmo.js:105</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><code>index?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6839;&#x8282;&#x70B9;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js"><span class="hljs-comment">//&#x4E0D;&#x63A8;&#x8350;&#x8FD9;&#x4E48;&#x505A;</span>
+<span class="hljs-keyword">this</span>.getGroup(<span class="hljs-number">1</span>).circle()
+    .center(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>)
+</code></pre>
+<p><span id="getCircle"><strong>getCircle</strong></span></p>
+<p>&#x83B7;&#x53D6;Svg&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x6307;&#x5B9A;&#x7684;group&#x7684;&#x5706;&#x5F62;,&#x4EC5;&#x663E;&#x793A;&#x7528;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://svgjs.com/docs/3.0/shape-elements/#svg-circle" target="_blank">SVG.Circle</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L122" target="_blank">super-gizmo.js:122</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>drawIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7ED8;&#x5236;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;</p>
+</li>
+<li><p><code>groupIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7B2C;&#x51E0;&#x4E2A;Group</p>
+</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw()
+{
+    <span class="hljs-keyword">const</span> points=[cc.v2(),cc.v2(),cc.v2()]
+    points.forEach((p,index)=&gt;{
+        <span class="hljs-keyword">const</span> p = <span class="hljs-keyword">this</span>.getFittedPosition(p)
+         <span class="hljs-keyword">this</span>.getCircle(index)
+          .center(p.x, p.y)
+    })
+}
+</code></pre>
+<p><span id="getTouchCircle"><strong>getTouchCircle</strong></span></p>
+<p>&#x83B7;&#x53D6;Svg&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x6307;&#x5B9A;&#x7684;group&#x5DF2;&#x7ECF;&#x6CE8;&#x518C;&#x4E86;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x7684;&#x5706;&#x5F62;,&#x7528;&#x4E8E;&#x4EA4;&#x4E92;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://svgjs.com/docs/3.0/shape-elements/#svg-circle" target="_blank">SVG.Circle</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L136" target="_blank">super-gizmo.js:136</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>drawIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7ED8;&#x5236;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;</p>
+</li>
+<li><p><code>groupIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7B2C;&#x51E0;&#x4E2A;Group</p>
+</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw()
+{
+    <span class="hljs-keyword">const</span> points=[cc.v2(),cc.v2(),cc.v2()]
+    points.forEach((p,index)=&gt;{
+        <span class="hljs-keyword">const</span> p = <span class="hljs-keyword">this</span>.getFittedPosition(p)
+         <span class="hljs-keyword">this</span>.getTouchCircle(index)
+          .center(p.x, p.y)
+    })
+}
+</code></pre>
+<p><span id="getLine"><strong>getLine</strong></span></p>
+<p>&#x83B7;&#x53D6;Svg&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x6307;&#x5B9A;&#x7684;group&#x7684;&#x7EBF;&#x6BB5;,&#x4EC5;&#x663E;&#x793A;&#x7528;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://svgjs.com/docs/3.0/shape-elements/#svg-line" target="_blank">SVG.Line</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L157" target="_blank">super-gizmo.js:157</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>drawIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7ED8;&#x5236;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;</p>
+</li>
+<li><p><code>groupIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7B2C;&#x51E0;&#x4E2A;Group</p>
+</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw()
+{
+    <span class="hljs-keyword">const</span> points=[cc.v2(),cc.v2(),cc.v2()]
+    points.forEach((p,index,arr)=&gt;{
+        <span class="hljs-keyword">const</span> p = <span class="hljs-keyword">this</span>.getFittedPosition(p)
+        <span class="hljs-keyword">if</span>(index!=arr.length<span class="hljs-number">-1</span>)
+        {
+            <span class="hljs-keyword">const</span> nextPoint=arr[index+<span class="hljs-number">1</span>]
+            <span class="hljs-keyword">this</span>.getLine(index)
+                  .plot([[p.x,p.y],[nextPoint.x,nextPoint.y]])   
+        }
+
+    })
+}
+</code></pre>
+<p><span id="getTouchLine"><strong>getTouchLine</strong></span></p>
+<p>&#x83B7;&#x53D6;Svg&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x6307;&#x5B9A;&#x7684;group&#x5DF2;&#x7ECF;&#x6CE8;&#x518C;&#x4E86;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x7684;&#x7EBF;&#x6BB5;,&#x7528;&#x4E8E;&#x4EA4;&#x4E92;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://svgjs.com/docs/3.0/shape-elements/#svg-line" target="_blank">SVG.Line</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L171" target="_blank">super-gizmo.js:171</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>drawIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7ED8;&#x5236;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;</p>
+</li>
+<li><p><code>groupIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7B2C;&#x51E0;&#x4E2A;Group</p>
+</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw()
+{
+    <span class="hljs-keyword">const</span> points=[cc.v2(),cc.v2(),cc.v2()]
+    points.forEach((p,index,arr)=&gt;{
+        <span class="hljs-keyword">const</span> p = <span class="hljs-keyword">this</span>.getFittedPosition(p)
+        <span class="hljs-keyword">if</span>(index!=arr.length<span class="hljs-number">-1</span>)
+        {
+            <span class="hljs-keyword">const</span> nextPoint=arr[index+<span class="hljs-number">1</span>]
+            <span class="hljs-keyword">this</span>.getTouchLine(index)
+                  .plot([[p.x,p.y],[nextPoint.x,nextPoint.y]])   
+        }
+
+    })
+}
+</code></pre>
+<p><span id="getPath"><strong>getPath</strong></span></p>
+<p>&#x83B7;&#x53D6;Svg&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x6307;&#x5B9A;&#x7684;group&#x7684;&#x8DEF;&#x5F84;,&#x4EC5;&#x663E;&#x793A;&#x7528;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://svgjs.com/docs/3.0/shape-elements/#svg-path" target="_blank">SVG.Path</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L186" target="_blank">super-gizmo.js:186</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>drawIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7ED8;&#x5236;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;</p>
+</li>
+<li><p><code>groupIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7B2C;&#x51E0;&#x4E2A;Group</p>
+</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw()
+{
+    <span class="hljs-keyword">let</span> path = <span class="hljs-keyword">this</span>.getPath()
+    <span class="hljs-keyword">let</span> pointArray=<span class="hljs-keyword">this</span>.getFittedPositionArray([<span class="hljs-number">0</span>, <span class="hljs-number">0</span>], [<span class="hljs-number">20</span>, <span class="hljs-number">10</span>], [<span class="hljs-number">200</span>, <span class="hljs-number">-22</span>], [<span class="hljs-number">100</span>, <span class="hljs-number">0</span>])
+    path.plot(<span class="hljs-keyword">this</span>.getClosePathData(...pointArray))
+}
+</code></pre>
+<p><span id="getTouchPath"><strong>getTouchPath</strong></span></p>
+<p>&#x83B7;&#x53D6;Svg&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x6307;&#x5B9A;&#x7684;group&#x5DF2;&#x7ECF;&#x6CE8;&#x518C;&#x4E86;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;,&#x7528;&#x4E8E;&#x4EA4;&#x4E92;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://svgjs.com/docs/3.0/shape-elements/#svg-path" target="_blank">SVG.Path</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L199" target="_blank">super-gizmo.js:199</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>drawIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7ED8;&#x5236;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;</p>
+</li>
+<li><p><code>groupIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7B2C;&#x51E0;&#x4E2A;Group</p>
+</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw()
+{
+    <span class="hljs-keyword">let</span> path = <span class="hljs-keyword">this</span>.getTouchPath()
+    <span class="hljs-keyword">let</span> pointArray=<span class="hljs-keyword">this</span>.getFittedPositionArray([<span class="hljs-number">0</span>, <span class="hljs-number">0</span>], [<span class="hljs-number">20</span>, <span class="hljs-number">10</span>], [<span class="hljs-number">200</span>, <span class="hljs-number">-22</span>], [<span class="hljs-number">100</span>, <span class="hljs-number">0</span>])
+    path.plot(<span class="hljs-keyword">this</span>.getClosePathData(...pointArray))
+}
+</code></pre>
+<p><span id="getRect"><strong>getRect</strong></span></p>
+<p>&#x83B7;&#x53D6;Svg&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x6307;&#x5B9A;&#x7684;group&#x7684;&#x77E9;&#x5F62;,&#x4EC5;&#x663E;&#x793A;&#x7528;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://svgjs.com/docs/3.0/shape-elements/#svg-rect" target="_blank">SVG.Rect</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L215" target="_blank">super-gizmo.js:215</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>drawIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7ED8;&#x5236;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;</p>
+</li>
+<li><p><code>groupIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7B2C;&#x51E0;&#x4E2A;Group</p>
+</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw()
+{
+    <span class="hljs-keyword">const</span> width=<span class="hljs-keyword">this</span>.getFittedNumber(<span class="hljs-number">100</span>)
+    <span class="hljs-keyword">const</span> rect=<span class="hljs-keyword">this</span>.getRect().size(width,width)
+}
+</code></pre>
+<p><span id="getTouchRect"><strong>getTouchRect</strong></span></p>
+<p>&#x83B7;&#x53D6;Svg&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x6307;&#x5B9A;&#x7684;group&#x5DF2;&#x7ECF;&#x6CE8;&#x518C;&#x4E86;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x7684;&#x77E9;&#x5F62;,&#x7528;&#x4E8E;&#x4EA4;&#x4E92;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x8FD4;&#x56DE;</td>
+<td><a href="https://svgjs.com/docs/3.0/shape-elements/#svg-rect" target="_blank">SVG.Rect</a></td>
+</tr>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L233" target="_blank">super-gizmo.js:233</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>drawIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7ED8;&#x5236;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;</p>
+</li>
+<li><p><code>groupIndex?</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7B2C;&#x51E0;&#x4E2A;Group</p>
+</li>
+</ul>
+<h5 id="&#x793A;&#x4F8B;">&#x793A;&#x4F8B;</h5>
+<pre><code class="lang-js">draw()
+{
+    <span class="hljs-keyword">const</span> width=<span class="hljs-keyword">this</span>.getFittedNumber(<span class="hljs-number">100</span>)
+    <span class="hljs-keyword">const</span> rect=<span class="hljs-keyword">this</span>.getRect().size(width,width)
+    <span class="hljs-keyword">const</span> touchRect=<span class="hljs-keyword">this</span>.getTouchRect().size(width,width)
+}
+</code></pre>
+<p><span id="onLineTouchBegan"><strong>abstract onLineTouchBegan</strong></span></p>
+<p>&#x7EBF;&#x6BB5;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x56DE;&#x8C03;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L96" target="_blank">super-gizmo.d.ts:96</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>point</code> <a href="https://docs.cocos.com/creator/api/zh/classes/Vec2.html" target="_blank">cc.Vec2</a> &#x76EE;&#x6807;&#x8282;&#x70B9;&#x7684;&#x8282;&#x70B9;&#x5750;&#x6807;&#x7CFB;&#x4E0A;&#x70B9;&#x51FB;&#x7684;&#x70B9;</p>
+</li>
+<li><p><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</p>
+</li>
+<li><p><code>drawIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchLine</p>
+</li>
+<li><p><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</p>
+</li>
+<li><p><code>line</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-line" target="_blank">SVG.Line</a> &#x7EBF;&#x6BB5;</p>
+</li>
+</ul>
+<p><span id="onLineTouchMoved"><strong>abstract onLineTouchMoved</strong></span></p>
+<p>&#x7EBF;&#x6BB5;&#x62D6;&#x62FD;&#x7684;&#x56DE;&#x8C03;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L97" target="_blank">super-gizmo.d.ts:97</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><code>touchStartPoint</code> <a href="https://docs.cocos.com/creator/api/zh/classes/Vec2.html" target="_blank">cc.Vec2</a> &#x76EE;&#x6807;&#x8282;&#x70B9;&#x7684;&#x8282;&#x70B9;&#x5750;&#x6807;&#x7CFB;&#x4E0A;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x7684;&#x70B9;</li>
+<li><code>dx</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6C34;&#x5E73;&#x65B9;&#x5411;&#x504F;&#x79FB;</li>
+<li><code>dy</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7AD6;&#x76F4;&#x65B9;&#x5411;&#x504F;&#x79FB;</li>
+<li><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</li>
+<li><code>drawIndex</code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a>  group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchLine</li>
+<li><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</li>
+<li><code>line</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-line" target="_blank">SVG.Line</a> &#x7EBF;&#x6BB5;</li>
+</ul>
+<p><span id="onLineTouchEnd"><strong>abstract onLineTouchEnd</strong></span></p>
+<p>&#x7EBF;&#x6BB5;&#x70B9;&#x51FB;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L98" target="_blank">super-gizmo.d.ts:98</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</li>
+<li><code>drawIndex</code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a>  group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchLine</li>
+<li><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</li>
+<li><code>line</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-line" target="_blank">SVG.Line</a> &#x7EBF;&#x6BB5;</li>
+</ul>
+<p><span id="onCircleTouchBegan"><strong>abstract onCircleTouchBegan</strong></span></p>
+<p>&#x5706;&#x5F62;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x56DE;&#x8C03;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L99" target="_blank">super-gizmo.d.ts:99</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>point</code> <a href="https://docs.cocos.com/creator/api/zh/classes/Vec2.html" target="_blank">cc.Vec2</a> &#x76EE;&#x6807;&#x8282;&#x70B9;&#x7684;&#x8282;&#x70B9;&#x5750;&#x6807;&#x7CFB;&#x4E0A;&#x70B9;&#x51FB;&#x7684;&#x70B9;</p>
+</li>
+<li><p><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</p>
+</li>
+<li><p><code>drawIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchCircle</p>
+</li>
+<li><p><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</p>
+</li>
+<li><p><code>circle</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-circle" target="_blank">SVG.Circle</a> &#x5706;&#x5F62;</p>
+</li>
+</ul>
+<p><span id="onCircleTouchMoved"><strong>abstract onCircleTouchMoved</strong></span></p>
+<p>&#x5706;&#x5F62;&#x62D6;&#x62FD;&#x7684;&#x56DE;&#x8C03;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L100" target="_blank">super-gizmo.d.ts:100</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>touchStartPoint</code> <a href="https://docs.cocos.com/creator/api/zh/classes/Vec2.html" target="_blank">cc.Vec2</a> &#x76EE;&#x6807;&#x8282;&#x70B9;&#x7684;&#x8282;&#x70B9;&#x5750;&#x6807;&#x7CFB;&#x4E0A;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x7684;&#x70B9;</p>
+</li>
+<li><p><code>dx</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6C34;&#x5E73;&#x65B9;&#x5411;&#x504F;&#x79FB;</p>
+</li>
+<li><p><code>dy</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7AD6;&#x76F4;&#x65B9;&#x5411;&#x504F;&#x79FB;</p>
+</li>
+<li><p><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</p>
+</li>
+<li><p><code>drawIndex</code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a>  group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchCircle</p>
+</li>
+<li><p><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</p>
+</li>
+<li><p><code>circle</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-circle" target="_blank">SVG.Circle</a> &#x5706;&#x5F62;</p>
+</li>
+</ul>
+<p><span id="onCircleTouchEnd"><strong>abstract onCircleTouchEnd</strong></span></p>
+<p>&#x5706;&#x5F62;&#x70B9;&#x51FB;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L101" target="_blank">super-gizmo.d.ts:101</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</li>
+<li><code>drawIndex</code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a>  group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchCircle</li>
+<li><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</li>
+<li><code>circle</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-circle" target="_blank">SVG.Circle</a> &#x5706;&#x5F62;</li>
+</ul>
+<p><span id="onRectTouchBegan"><strong>abstract onRectTouchBegan</strong></span></p>
+<p>&#x77E9;&#x5F62;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x56DE;&#x8C03;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L102" target="_blank">super-gizmo.d.ts:102</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>point</code> <a href="https://docs.cocos.com/creator/api/zh/classes/Vec2.html" target="_blank">cc.Vec2</a> &#x76EE;&#x6807;&#x8282;&#x70B9;&#x7684;&#x8282;&#x70B9;&#x5750;&#x6807;&#x7CFB;&#x4E0A;&#x70B9;&#x51FB;&#x7684;&#x70B9;</p>
+</li>
+<li><p><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</p>
+</li>
+<li><p><code>drawIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchRect</p>
+</li>
+<li><p><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</p>
+</li>
+<li><p><code>rect</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-rect" target="_blank">SVG.Rect</a> &#x77E9;&#x5F62;</p>
+</li>
+</ul>
+<p><span id="onRectTouchMoved"><strong>abstract onRectTouchMoved</strong></span></p>
+<p>&#x77E9;&#x5F62;&#x62D6;&#x62FD;&#x7684;&#x56DE;&#x8C03;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L103" target="_blank">super-gizmo.d.ts:103</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>touchStartPoint</code> <a href="https://docs.cocos.com/creator/api/zh/classes/Vec2.html" target="_blank">cc.Vec2</a> &#x76EE;&#x6807;&#x8282;&#x70B9;&#x7684;&#x8282;&#x70B9;&#x5750;&#x6807;&#x7CFB;&#x4E0A;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x7684;&#x70B9;</p>
+</li>
+<li><p><code>dx</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6C34;&#x5E73;&#x65B9;&#x5411;&#x504F;&#x79FB;</p>
+</li>
+<li><p><code>dy</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7AD6;&#x76F4;&#x65B9;&#x5411;&#x504F;&#x79FB;</p>
+</li>
+<li><p><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</p>
+</li>
+<li><p><code>drawIndex</code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a>  group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchRect</p>
+</li>
+<li><p><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</p>
+</li>
+<li><p><code>rect</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-rect" target="_blank">SVG.Rect</a> &#x77E9;&#x5F62;</p>
+</li>
+</ul>
+<p><span id="onRectTouchEnd"><strong>abstract onRectTouchEnd</strong></span></p>
+<p>&#x77E9;&#x5F62;&#x70B9;&#x51FB;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L104" target="_blank">super-gizmo.d.ts:104</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</p>
+</li>
+<li><p><code>drawIndex</code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a>  group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchRect</p>
+</li>
+<li><p><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</p>
+</li>
+<li><p><code>rect</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-rect" target="_blank">SVG.Rect</a> &#x77E9;&#x5F62;</p>
+</li>
+</ul>
+<p><span id="onPathTouchBegan"><strong>abstract onPathTouchBegan</strong></span></p>
+<p>&#x8DEF;&#x5F84;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x56DE;&#x8C03;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L105" target="_blank">super-gizmo.d.ts:105</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>point</code> <a href="https://docs.cocos.com/creator/api/zh/classes/Vec2.html" target="_blank">cc.Vec2</a> &#x76EE;&#x6807;&#x8282;&#x70B9;&#x7684;&#x8282;&#x70B9;&#x5750;&#x6807;&#x7CFB;&#x4E0A;&#x70B9;&#x51FB;&#x7684;&#x70B9;</p>
+</li>
+<li><p><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</p>
+</li>
+<li><p><code>drawIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchPath</p>
+</li>
+<li><p><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</p>
+</li>
+<li><p><code>path</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-path" target="_blank">SVG.Path</a> &#x8DEF;&#x5F84;</p>
+</li>
+</ul>
+<p><span id="onPathTouchMoved"><strong>abstract onPathTouchMoved</strong></span></p>
+<p>&#x8DEF;&#x5F84;&#x62D6;&#x62FD;&#x7684;&#x56DE;&#x8C03;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L106" target="_blank">super-gizmo.d.ts:106</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>touchStartPoint</code> <a href="https://docs.cocos.com/creator/api/zh/classes/Vec2.html" target="_blank">cc.Vec2</a> &#x76EE;&#x6807;&#x8282;&#x70B9;&#x7684;&#x8282;&#x70B9;&#x5750;&#x6807;&#x7CFB;&#x4E0A;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x7684;&#x70B9;</p>
+</li>
+<li><p><code>dx</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x6C34;&#x5E73;&#x65B9;&#x5411;&#x504F;&#x79FB;</p>
+</li>
+<li><p><code>dy</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x7AD6;&#x76F4;&#x65B9;&#x5411;&#x504F;&#x79FB;</p>
+</li>
+<li><p><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</p>
+</li>
+<li><p><code>drawIndex</code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a>  group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchPath</p>
+</li>
+<li><p><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</p>
+</li>
+<li><p><code>path</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-path" target="_blank">SVG.Path</a> &#x8DEF;&#x5F84;</p>
+</li>
+</ul>
+<p><span id="onPathTouchEnd"><strong>abstract onPathTouchEnd</strong></span></p>
+<p>&#x8DEF;&#x5F84;&#x70B9;&#x51FB;&#x7ED3;&#x675F;&#x7684;&#x56DE;&#x8C03;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.d.ts#L107" target="_blank">super-gizmo.d.ts:107</a></td>
+</tr>
+</tbody>
+</table>
+<h6 id="&#x53C2;&#x6570;&#x5217;&#x8868;">&#x53C2;&#x6570;&#x5217;&#x8868;</h6>
+<ul>
+<li><p><code>event</code> <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MouseEvent/MouseEvent" target="_blank">MouseEvent</a> &#x4E8B;&#x4EF6;</p>
+</li>
+<li><p><code>drawIndex</code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a>  group&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;TouchPath</p>
+</li>
+<li><p><code>groupIndex</code> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank">Number</a> &#x5C5E;&#x4E8E;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x7B2C;&#x51E0;&#x4E2A;group</p>
+</li>
+<li><p><code>path</code> <a href="https://svgjs.com/docs/3.0/shape-elements/#svg-path" target="_blank">SVG.Path</a> &#x8DEF;&#x5F84;</p>
+</li>
+</ul>
+<p><span id="clear"><strong>clear</strong></span></p>
+<p>&#x6E05;&#x9664;&#x6240;&#x6709;&#x7684;&#x6E32;&#x67D3;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L257" target="_blank">super-gizmo.js:257</a></td>
+</tr>
+</tbody>
+</table>
+<p><span id="draw"><strong>draw</strong></span></p>
+<p>&#x5F00;&#x53D1;&#x8005;&#x7ED8;&#x5236;&#x7684;&#x5165;&#x53E3;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L105" target="_blank">super-gizmo.js:267</a></td>
+</tr>
+</tbody>
+</table>
+<p><span id="render"><strong>render</strong></span></p>
+<p>&#x6E32;&#x67D3;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L302" target="_blank">super-gizmo.js:302</a></td>
+</tr>
+</tbody>
+</table>
+<p><span id="resetData"><strong>resetData</strong></span></p>
+<p>&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5E76;&#x89E3;&#x6790;&#x540E;&#x8D4B;&#x503C;&#x7ED9;&#x5F53;&#x524D;gizmo</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L313" target="_blank">super-gizmo.js:313</a></td>
+</tr>
+</tbody>
+</table>
+<p><span id="onCreateMoveCallbacks"><strong>onCreateMoveCallbacks</strong></span></p>
+<p>&#x521B;&#x5EFA; gizmo &#x64CD;&#x4F5C;&#x56DE;&#x8C03;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L333" target="_blank">super-gizmo.js:333</a></td>
+</tr>
+</tbody>
+</table>
+<p><span id="onCreateRoot"><strong>onCreateRoot</strong></span></p>
+<p>&#x521B;&#x5EFA; svg &#x6839;&#x8282;&#x70B9;&#x7684;&#x56DE;&#x8C03;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L411" target="_blank">super-gizmo.js:411</a></td>
+</tr>
+</tbody>
+</table>
+<p><span id="onUpdate"><strong>onUpdate</strong></span></p>
+<p>gizmo&#x66F4;&#x65B0;</p>
+<table>
+<thead>
+<tr>
+<th>meta</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5B9A;&#x4E49;&#x4E8E;</td>
+<td><a href="https://github.com/chichinohaha/super-gizmo/blob/main/scripts/super-gizmo.js#L429" target="_blank">super-gizmo.js:429</a></td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="What is SuperGizmo.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 什么是SuperGizmo">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"API","level":"1.3","depth":1,"next":{"title":"多边形音效按钮","level":"1.4","depth":1,"anchor":"#/resources/detail/2519","url":"https://store.cocos.com/#/resources/detail/2519","ref":"https://store.cocos.com/#/resources/detail/2519","articles":[{"title":"多边形音效按钮","level":"1.4.1","depth":2,"anchor":"#/resources/detail/2519","url":"https://store.cocos.com/#/resources/detail/2519","ref":"https://store.cocos.com/#/resources/detail/2519","articles":[]},{"title":"Tweener缓动插件","level":"1.4.2","depth":2,"anchor":"#/resources/detail/2537","url":"https://store.cocos.com/#/resources/detail/2537","ref":"https://store.cocos.com/#/resources/detail/2537","articles":[]}]},"previous":{"title":"什么是SuperGizmo","level":"1.2","depth":1,"path":"What is SuperGizmo.md","ref":"What is SuperGizmo.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"API.md","mtime":"2020-11-14T10:17:28.622Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-14T10:29:51.081Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
