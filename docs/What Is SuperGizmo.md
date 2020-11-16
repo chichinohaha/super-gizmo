@@ -24,5 +24,6 @@
 
   调用getTouch开头的方法即可获取注册好点击事件的图形 实现抽象类superGizmo的方法即可处理交互。
 
+![where should i draw.jpg](https://raw.githubusercontent.com/chichinohaha/super-gizmo/main/images/where%20should%20i%20draw.png)
 
-
+![draw.jpg](https://raw.githubusercontent.com/chichinohaha/super-gizmo/main/images/interaction.png)
